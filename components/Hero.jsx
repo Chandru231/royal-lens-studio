@@ -14,7 +14,7 @@ const Hero = () => {
             className="w-full h-full object-cover"
             poster="https://images.unsplash.com/photo-1511285560982-1356c11d4606?auto=format&fit=crop&q=80&w=1920"
         >
-            <source src="./videos/Hero.mp4" type="video/mp4" />
+            <source src="/videos/Hero.mp4" type="video/mp4" />
         </video>
         
         {/* Overlay for text readability - Lighter for Gold/White theme */}
