@@ -21,7 +21,7 @@ export const SERVICES = [
     title: 'Maternity & Baby',
     description: 'Celebrating new life with artistic maternity shoots and adorable newborn photography. Gentle, safe, and beautiful memories.',
     icon: Baby,
-    image: '/images/Maternity & baby.jpg',
+    image: '/images/Maternity & Baby.jpg',
   },
   {
     id: 'corporate',
