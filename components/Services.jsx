@@ -1,5 +1,5 @@
 import React from 'react';
-import { SERVICES } from '../constants';
+import { Heart, Camera, Baby, Briefcase } from 'lucide-react';
 
 const Services = () => {
   return (
@@ -26,30 +26,89 @@ const Services = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {SERVICES.map((service, index) => (
-            <div 
-              key={service.id}
-              className="group bg-brand-white shadow-sm hover:shadow-2xl transition-all duration-500 overflow-hidden border border-gray-100"
-            >
+            {/* Service 1: Wedding */}
+            <div className="group bg-brand-white shadow-sm hover:shadow-2xl transition-all duration-500 overflow-hidden border border-gray-100">
               <div className="h-64 overflow-hidden relative">
-                  <img src={service.image} alt={service.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+                  <img src="/images/Royal Weddings.jpg" alt="Royal Weddings" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
                   <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors duration-300"></div>
                   <div className="absolute bottom-4 right-4 bg-brand-white p-3 rounded-full shadow-lg">
-                      <service.icon className="w-6 h-6 text-brand-gold" />
+                      <Heart className="w-6 h-6 text-brand-gold" />
                   </div>
               </div>
               
               <div className="p-8 text-center">
-                <h3 className="font-serif text-2xl text-brand-black mb-3 group-hover:text-brand-gold transition-colors">{service.title}</h3>
+                <h3 className="font-serif text-2xl text-brand-black mb-3 group-hover:text-brand-gold transition-colors">Royal Weddings</h3>
                 <p className="font-sans text-brand-charcoal/70 text-sm leading-relaxed mb-6">
-                  {service.description}
+                  Specializing in traditional and modern wedding ceremonies. From the Haldi to the Reception, we capture every ritual with grandeur.
                 </p>
                 <a href="#contact" className="inline-block text-xs uppercase tracking-widest text-brand-black border-b border-brand-gold/50 pb-1 hover:border-brand-gold transition-all font-semibold">
                     Inquire Now
                 </a>
               </div>
             </div>
-          ))}
+
+            {/* Service 2: Fashion */}
+            <div className="group bg-brand-white shadow-sm hover:shadow-2xl transition-all duration-500 overflow-hidden border border-gray-100">
+              <div className="h-64 overflow-hidden relative">
+                  <img src="/images/fashion.jpg" alt="Fashion & Portfolio" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+                  <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors duration-300"></div>
+                  <div className="absolute bottom-4 right-4 bg-brand-white p-3 rounded-full shadow-lg">
+                      <Camera className="w-6 h-6 text-brand-gold" />
+                  </div>
+              </div>
+              
+              <div className="p-8 text-center">
+                <h3 className="font-serif text-2xl text-brand-black mb-3 group-hover:text-brand-gold transition-colors">Fashion & Portfolio</h3>
+                <p className="font-sans text-brand-charcoal/70 text-sm leading-relaxed mb-6">
+                  High-end editorial shoots for models, actors, and influencers. Professional lighting and direction to build your perfect portfolio.
+                </p>
+                <a href="#contact" className="inline-block text-xs uppercase tracking-widest text-brand-black border-b border-brand-gold/50 pb-1 hover:border-brand-gold transition-all font-semibold">
+                    Inquire Now
+                </a>
+              </div>
+            </div>
+
+            {/* Service 3: Maternity */}
+            <div className="group bg-brand-white shadow-sm hover:shadow-2xl transition-all duration-500 overflow-hidden border border-gray-100">
+              <div className="h-64 overflow-hidden relative">
+                  <img src="/images/Maternity & baby.jpg" alt="Maternity & Baby" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+                  <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors duration-300"></div>
+                  <div className="absolute bottom-4 right-4 bg-brand-white p-3 rounded-full shadow-lg">
+                      <Baby className="w-6 h-6 text-brand-gold" />
+                  </div>
+              </div>
+              
+              <div className="p-8 text-center">
+                <h3 className="font-serif text-2xl text-brand-black mb-3 group-hover:text-brand-gold transition-colors">Maternity & Baby</h3>
+                <p className="font-sans text-brand-charcoal/70 text-sm leading-relaxed mb-6">
+                  Celebrating new life with artistic maternity shoots and adorable newborn photography. Gentle, safe, and beautiful memories.
+                </p>
+                <a href="#contact" className="inline-block text-xs uppercase tracking-widest text-brand-black border-b border-brand-gold/50 pb-1 hover:border-brand-gold transition-all font-semibold">
+                    Inquire Now
+                </a>
+              </div>
+            </div>
+
+            {/* Service 4: Corporate */}
+            <div className="group bg-brand-white shadow-sm hover:shadow-2xl transition-all duration-500 overflow-hidden border border-gray-100">
+              <div className="h-64 overflow-hidden relative">
+                  <img src="/images/Corporate & Events.jpg" alt="Corporate & Events" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+                  <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors duration-300"></div>
+                  <div className="absolute bottom-4 right-4 bg-brand-white p-3 rounded-full shadow-lg">
+                      <Briefcase className="w-6 h-6 text-brand-gold" />
+                  </div>
+              </div>
+              
+              <div className="p-8 text-center">
+                <h3 className="font-serif text-2xl text-brand-black mb-3 group-hover:text-brand-gold transition-colors">Corporate & Events</h3>
+                <p className="font-sans text-brand-charcoal/70 text-sm leading-relaxed mb-6">
+                  Professional headshots, brand campaigns, and event coverage for businesses. Elevate your brand image with crisp visuals.
+                </p>
+                <a href="#contact" className="inline-block text-xs uppercase tracking-widest text-brand-black border-b border-brand-gold/50 pb-1 hover:border-brand-gold transition-all font-semibold">
+                    Inquire Now
+                </a>
+              </div>
+            </div>
         </div>
       </div>
     </section>
