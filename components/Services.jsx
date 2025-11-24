@@ -71,7 +71,7 @@ const Services = () => {
             {/* Service 3: Maternity */}
             <div className="group bg-brand-white shadow-sm hover:shadow-2xl transition-all duration-500 overflow-hidden border border-gray-100">
               <div className="h-64 overflow-hidden relative">
-                  <img src="/images/Maternity & baby.jpg" alt="Maternity & Baby" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+                  <img src="/images/Baby.jpg" alt="Maternity & Baby" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
                   <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors duration-300"></div>
                   <div className="absolute bottom-4 right-4 bg-brand-white p-3 rounded-full shadow-lg">
                       <Baby className="w-6 h-6 text-brand-gold" />
